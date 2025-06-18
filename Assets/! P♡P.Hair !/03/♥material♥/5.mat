@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 5
-  m_Shader: {fileID: 4800000, guid: 3c79b10c7e0b2784aaa4c2f8dd17d55e, type: 3}
+  m_Shader: {fileID: 4800000, guid: 165365ab7100a044ca85fc8c33548a62, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -216,7 +216,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 489296106582f004d9c5b7e883a9e6d7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ReflectionColorTex:
@@ -476,7 +476,7 @@ Material:
     - _MatCapApplyTransparency: 1
     - _MatCapBackfaceMask: 0
     - _MatCapBlend: 1
-    - _MatCapBlendMode: 1
+    - _MatCapBlendMode: 0
     - _MatCapBumpScale: 1
     - _MatCapCustomNormal: 0
     - _MatCapEnableLighting: 1
@@ -570,6 +570,9 @@ Material:
     - _ReflectionCubeEnableLighting: 1
     - _ReflectionCubeOverride: 0
     - _ReflectionNormalStrength: 1
+    - _RefractionColorFromMain: 0
+    - _RefractionFresnelPower: 0.5
+    - _RefractionStrength: 0.1
     - _RimApplyTransparency: 1
     - _RimBackfaceMask: 1
     - _RimBlendMode: 1
@@ -585,20 +588,20 @@ Material:
     - _RimMainStrength: 0
     - _RimNormalStrength: 1
     - _RimShadeBlur: 0.561
-    - _RimShadeBorder: 0.578
+    - _RimShadeBorder: 0.43
     - _RimShadeFresnelPower: 1.9
     - _RimShadeNormalStrength: 1
     - _RimShadowMask: 0.6
     - _RimVRParallaxStrength: 1
     - _Shadow2ndBlur: 0.149
-    - _Shadow2ndBorder: 0.24
+    - _Shadow2ndBorder: 0.149
     - _Shadow2ndNormalStrength: 1
-    - _Shadow2ndReceive: 0.679
+    - _Shadow2ndReceive: 0.4
     - _Shadow3rdBlur: 0.1
     - _Shadow3rdBorder: 0.25
     - _Shadow3rdNormalStrength: 1
     - _Shadow3rdReceive: 0
-    - _ShadowBlur: 0.197
+    - _ShadowBlur: 0.2
     - _ShadowBlurMaskLOD: 0
     - _ShadowBorder: 0.395
     - _ShadowBorderMaskLOD: 0
@@ -607,12 +610,12 @@ Material:
     - _ShadowEnvStrength: 0
     - _ShadowFlatBlur: 1
     - _ShadowFlatBorder: 1
-    - _ShadowMainStrength: 0
+    - _ShadowMainStrength: 0.4
     - _ShadowMaskType: 0
-    - _ShadowNormalStrength: 1
+    - _ShadowNormalStrength: 0.92
     - _ShadowPostAO: 0
     - _ShadowReceive: 0.687
-    - _ShadowStrength: 0.5
+    - _ShadowStrength: 1
     - _ShadowStrengthMaskLOD: 0
     - _ShiftBackfaceUV: 0
     - _Smoothness: 0.347
@@ -671,12 +674,12 @@ Material:
     - _UseGlitter: 0
     - _UseMain2ndTex: 1
     - _UseMain3rdTex: 0
-    - _UseMatCap: 0
+    - _UseMatCap: 1
     - _UseMatCap2nd: 0
     - _UseOutline: 0
     - _UsePOM: 0
     - _UseParallax: 0
-    - _UseReflection: 1
+    - _UseReflection: 0
     - _UseRim: 1
     - _UseRimShade: 0
     - _UseShadow: 1
@@ -748,7 +751,7 @@ Material:
     - _MatCap2ndBlendUV1: {r: 0, g: 0, b: 0, a: 0}
     - _MatCap2ndColor: {r: 1, g: 1, b: 1, a: 1}
     - _MatCapBlendUV1: {r: 0, g: 0, b: 0, a: 0}
-    - _MatCapColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MatCapColor: {r: 0.55345905, g: 0.55345905, b: 0.55345905, a: 0.01}
     - _OutlineColor: {r: 0.46226418, g: 0.36587498, b: 0.31689805, a: 1}
     - _OutlineLitColor: {r: 1, g: 0.19999996, b: 0, a: 0}
     - _OutlineTexHSVG: {r: 0, g: 1, b: 1, a: 1}
@@ -756,14 +759,15 @@ Material:
     - _PreColor: {r: 1, g: 1, b: 1, a: 1}
     - _ReflectionColor: {r: 1, g: 0.8721663, b: 0.83396226, a: 1}
     - _ReflectionCubeColor: {r: 0, g: 0, b: 0, a: 1}
-    - _RimColor: {r: 0.8018868, g: 0.63848346, b: 0.69975966, a: 1}
+    - _RefractionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimColor: {r: 0.8018868, g: 0.63848346, b: 0.6997596, a: 1}
     - _RimIndirColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RimShadeColor: {r: 0.5534295, g: 0.5661796, b: 0.6132076, a: 1}
+    - _RimShadeColor: {r: 0.71383643, g: 0.77106917, b: 1, a: 1}
     - _Shadow2ndColor: {r: 0.7944984, g: 0.7176471, b: 0.8117647, a: 1}
     - _Shadow3rdColor: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowAOShift: {r: 4.9751244, g: 0.049751244, b: 1, a: -0}
     - _ShadowAOShift2: {r: 1, g: -0, b: 0, a: 0}
-    - _ShadowBorderColor: {r: 1, g: 0, b: 0.37186047, a: 1}
+    - _ShadowBorderColor: {r: 1, g: 0.02352941, b: 0.47009754, a: 1}
     - _ShadowColor: {r: 0.6039216, g: 0.45098037, b: 0.5717682, a: 1}
     - _e2ga0: {r: 1, g: 0, b: 0, a: 0}
     - _e2ga1: {r: 1, g: 0, b: 0, a: 1}
