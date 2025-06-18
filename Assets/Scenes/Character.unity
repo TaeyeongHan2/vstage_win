@@ -127,6 +127,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6812237261017288463, guid: a0f3ced80a65ee64cbc31500a497fe44, type: 3}
+      propertyPath: 'm_BlendShapeWeights.Array.data[45]'
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812237261017288463, guid: a0f3ced80a65ee64cbc31500a497fe44, type: 3}
+      propertyPath: 'm_BlendShapeWeights.Array.data[46]'
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7492551626289600027, guid: a0f3ced80a65ee64cbc31500a497fe44, type: 3}
       propertyPath: m_Name
       value: Shinano_kisekae
@@ -365,6 +373,7 @@ PrefabInstance:
     - {fileID: 6355827014491062688, guid: a0f3ced80a65ee64cbc31500a497fe44, type: 3}
     - {fileID: 6185209211062047555, guid: a0f3ced80a65ee64cbc31500a497fe44, type: 3}
     - {fileID: 5050075992986722120, guid: a0f3ced80a65ee64cbc31500a497fe44, type: 3}
+    - {fileID: 5223093137635920791, guid: a0f3ced80a65ee64cbc31500a497fe44, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0f3ced80a65ee64cbc31500a497fe44, type: 3}
