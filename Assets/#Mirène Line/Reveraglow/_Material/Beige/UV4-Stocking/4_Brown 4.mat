@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 4_Brown 4
+  m_Shader: {fileID: 4800000, guid: df12117ecd77c31469c224178886498e, type: 3}
+  m_Parent: {fileID: 2100000, guid: db2ebddf1b109a648b2a8f2691010291, type: 2}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseColorMap:
+        m_Texture: {fileID: 2800000, guid: 2a3cae560dfb88144841275f49f68f3f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 2a3cae560dfb88144841275f49f68f3f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 2a3cae560dfb88144841275f49f68f3f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ApplyReflection: 1
+    - _MatCapMainStrength: 0
+    - _MatCapNormalStrength: 1
+    - _Metallic: 0.26899996
+    - _Reflectance: 0
+    - _RimBlur: 0.582
+    - _RimBorder: 0.594
+    - _RimFresnelPower: 2.3
+    - _RimShadeBlur: 0.649
+    - _RimShadeBorder: 0.355
+    - _RimShadeFresnelPower: 0.9
+    - _RimShadeNormalStrength: 1
+    - _Shadow2ndBlur: 0.35
+    - _Shadow2ndBorder: 0.355
+    - _Shadow2ndNormalStrength: 0.45
+    - _Shadow3rdBlur: 0.34
+    - _Shadow3rdBorder: 0.2
+    - _Shadow3rdNormalStrength: 0.15
+    - _ShadowBlur: 0.539
+    - _ShadowBorder: 0.492
+    - _ShadowMainStrength: 0.2
+    - _ShadowNormalStrength: 0.45
+    - _Smoothness: 0.748
+    - _SpecularBlur: 1
+    - _SpecularBorder: 0
+    - _UseReflection: 1
+    - _lilToonVersion: 45
+    m_Colors:
+    - _MatCapColor: {r: 0.9433962, g: 0.8538002, b: 0.84994656, a: 0.308}
+    - _ReflectionColor: {r: 0.8113207, g: 0.69288254, b: 0.67737633, a: 0.054}
+    - _RimColor: {r: 0.5, g: 0.41745278, b: 0.41745278, a: 1}
+    - _RimShadeColor: {r: 0.735849, g: 0.66205657, b: 0.5449448, a: 1}
+    - _Shadow2ndColor: {r: 0.9150943, g: 0.8883304, b: 0.867613, a: 1}
+    - _Shadow3rdColor: {r: 0.5283019, g: 0.5057452, b: 0.48095405, a: 0.539}
+    - _ShadowAOShift: {r: 0.98039216, g: 0.009803921, b: 1.4084507, a: -0.42253524}
+    - _ShadowAOShift2: {r: 0.98039216, g: 0.009803921, b: 0, a: 0}
+    - _ShadowBorderColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ShadowColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []

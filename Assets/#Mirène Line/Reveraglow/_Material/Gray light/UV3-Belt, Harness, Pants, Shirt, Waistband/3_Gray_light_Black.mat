@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 3_Gray_light_Black
+  m_Shader: {fileID: 4800000, guid: 85d6126cae43b6847aff4b13f4adb8ec, type: 3}
+  m_Parent: {fileID: 2100000, guid: 3b54aed23d3831c4f9783abde3dd3300, type: 2}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseColorMap:
+        m_Texture: {fileID: 2800000, guid: 878cb18527adbde4889a461d76e5c549, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 878cb18527adbde4889a461d76e5c549, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Main2ndBlendMask:
+        m_Texture: {fileID: 2800000, guid: f0333aff92ee05b4194bcfee443710e7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 878cb18527adbde4889a461d76e5c549, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MatCap2ndBlendMask:
+        m_Texture: {fileID: 2800000, guid: 7c26e343b0e7a0b4db1595038eab8772, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MatCap2ndTex:
+        m_Texture: {fileID: 2800000, guid: c7dcf5334e6aca542a4a350f6df12985, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MatCapBlendMask:
+        m_Texture: {fileID: 2800000, guid: 7fa6c5cdff5638345b275b7369ba5375, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MatCapTex:
+        m_Texture: {fileID: 2800000, guid: 8f140c07180a72f4e83e03641b2de899, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: 7fa6c5cdff5638345b275b7369ba5375, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionColorTex:
+        m_Texture: {fileID: 2800000, guid: 7fa6c5cdff5638345b275b7369ba5375, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SmoothnessTex:
+        m_Texture: {fileID: 2800000, guid: 7fa6c5cdff5638345b275b7369ba5375, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ApplyReflection: 1
+    - _GSAAStrength: 0.073
+    - _MatCap2ndNormalStrength: 0.112
+    - _MatCapNormalStrength: 1
+    - _Metallic: 0.058999956
+    - _Reflectance: 0.13699993
+    - _RimBlur: 0.582
+    - _RimBorder: 0.594
+    - _RimFresnelPower: 2.3
+    - _RimShadeBlur: 0.649
+    - _RimShadeBorder: 0.355
+    - _RimShadeFresnelPower: 0.9
+    - _RimShadeNormalStrength: 1
+    - _Shadow2ndBlur: 0.35
+    - _Shadow2ndBorder: 0.355
+    - _Shadow2ndNormalStrength: 0.45
+    - _Shadow3rdBlur: 0.34
+    - _Shadow3rdBorder: 0.2
+    - _Shadow3rdNormalStrength: 0.15
+    - _ShadowBlur: 0.539
+    - _ShadowBorder: 0.492
+    - _ShadowMainStrength: 0.2
+    - _ShadowNormalStrength: 0.45
+    - _Smoothness: 0.847
+    - _SpecularBlur: 0.073
+    - _SpecularBorder: 1
+    - _SpecularNormalStrength: 0.356
+    - _UseBumpMap: 1
+    - _UseMain2ndTex: 1
+    - _UseMatCap: 1
+    - _UseMatCap2nd: 1
+    - _UseReflection: 1
+    - _lilToonVersion: 45
+    m_Colors:
+    - _BaseColor: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
+    - _Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
+    - _Color2nd: {r: 0, g: 0, b: 0, a: 1}
+    - _MainTexHSVG: {r: 0, g: 0, b: 1, a: 1.25}
+    - _MatCap2ndColor: {r: 0.81960785, g: 0.7882353, b: 0.78431374, a: 0.108}
+    - _MatCapColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ReflectionColor: {r: 1, g: 1, b: 1, a: 0.537}
+    - _RimColor: {r: 0.6037736, g: 0.6037736, b: 0.6037736, a: 1}
+    - _RimShadeColor: {r: 0.43396226, g: 0.43396226, b: 0.43396226, a: 1}
+    - _Shadow2ndColor: {r: 0.75471693, g: 0.75471693, b: 0.75471693, a: 1}
+    - _Shadow3rdColor: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 0.539}
+    - _ShadowAOShift: {r: 0.98039216, g: 0.009803921, b: 1.4084507, a: -0.42253524}
+    - _ShadowAOShift2: {r: 0.98039216, g: 0.009803921, b: 0, a: 0}
+    - _ShadowBorderColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ShadowColor: {r: 0.9245283, g: 0.9245283, b: 0.9245283, a: 1}
+  m_BuildTextureStacks: []
