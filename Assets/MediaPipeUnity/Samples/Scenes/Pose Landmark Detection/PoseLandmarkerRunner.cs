@@ -16,6 +16,7 @@ namespace Mediapipe.Unity.Sample.PoseLandmarkDetection
   {
     /// 포즈 랜드마커 결과를 시각화할 Annotation Controller를 할당
     [SerializeField] private PoseLandmarkerResultAnnotationController _poseLandmarkerResultAnnotationController;
+    [SerializeField] private SimplePoseToHumanoid _simplePoseToHumanoid;
     /// 텍스처를 효율적으로 관리하기 위한 풀(Pool) 클래스
     private Experimental.TextureFramePool _textureFramePool;
     /// 포즈 랜드마크 검출에 필요한 설정값을 저장한 Config 객체
@@ -157,6 +158,7 @@ namespace Mediapipe.Unity.Sample.PoseLandmarkDetection
             if (taskApi.TryDetect(image, imageProcessingOptions, ref result))
             {
               _poseLandmarkerResultAnnotationController.DrawNow(result);
+              _simplePoseToHumanoid?.UpdatePose(result);
             }
             else
             {
@@ -169,6 +171,7 @@ namespace Mediapipe.Unity.Sample.PoseLandmarkDetection
             if (taskApi.TryDetectForVideo(image, GetCurrentTimestampMillisec(), imageProcessingOptions, ref result))
             {
               _poseLandmarkerResultAnnotationController.DrawNow(result);
+              _simplePoseToHumanoid?.UpdatePose(result);
             }
             else
             {
@@ -189,6 +192,7 @@ namespace Mediapipe.Unity.Sample.PoseLandmarkDetection
     {
       // 비동기로 처리된 결과를 그려줌
       _poseLandmarkerResultAnnotationController.DrawLater(result);
+      _simplePoseToHumanoid?.UpdatePose(result);
       DisposeAllMasks(result);
     }
 
