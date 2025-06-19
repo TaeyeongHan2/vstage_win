@@ -35,7 +35,7 @@ namespace Mediapipe.Unity.Sample.PoseLandmarkDetection
     /// 영상을 어떤 방식으로 읽어오는지 설정. CPU 비동기 모드가 기본값
     public ImageReadMode ImageReadMode { get; set; } = ImageReadMode.CPUAsync;
     /// 사용할 모델 타입(라이트, 풀, 헤비)
-    public ModelType Model { get; set; } = ModelType.BlazePoseFull;
+    public ModelType Model { get; set; } = ModelType.BlazePoseHeavy;
     /// 라이브 스트림 등 동작 방식을 정의
     public Tasks.Vision.Core.RunningMode RunningMode { get; set; } = Tasks.Vision.Core.RunningMode.LIVE_STREAM;
     /// 감지할 포즈의 최대 개수

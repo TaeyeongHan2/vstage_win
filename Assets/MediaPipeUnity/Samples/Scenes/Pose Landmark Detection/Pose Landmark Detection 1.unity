@@ -516,14 +516,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4201588719830419513, guid: e691e1ee350868f40bd40e587a00f85b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1204313697}
+      addedObject: {fileID: 1204313701}
   m_SourcePrefab: {fileID: 100100000, guid: e691e1ee350868f40bd40e587a00f85b, type: 3}
 --- !u!1 &1204313696 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4201588719830419513, guid: e691e1ee350868f40bd40e587a00f85b, type: 3}
   m_PrefabInstance: {fileID: 1172799093}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1204313697
+--- !u!114 &1204313701
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -532,19 +532,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1204313696}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c52a3ef72ef14ab4cbb10cec837c0e0d, type: 3}
+  m_Script: {fileID: 11500000, guid: 47aba82bc6ee0e049bff54c3b6ee5685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetAnimator: {fileID: 1204313699}
-  smoothing: 5
-  enableDebugLog: 0
-  armRotationMultiplier: 150
-  maxArmRotation: 120
---- !u!95 &1204313699 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8729954184199052814, guid: e691e1ee350868f40bd40e587a00f85b, type: 3}
-  m_PrefabInstance: {fileID: 1172799093}
-  m_PrefabAsset: {fileID: 0}
+  poseLandmarkerRunner: {fileID: 0}
+  targetAnimator: {fileID: 0}
+  smoothing: 10
 --- !u!224 &1229135957 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3259285889726014650, guid: 5713b959e3c77a58fb258133fc8e4aef, type: 3}
@@ -769,7 +762,7 @@ Transform:
   m_GameObject: {fileID: 1969388814}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0.44, z: -1.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -819,53 +812,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!1 &2120638965
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2120638967}
-  - component: {fileID: 2120638966}
-  m_Layer: 0
-  m_Name: PoseToHumanoidBridge
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2120638966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2120638965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b2ae1f861d444f9ba038b74c45a8830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  poseRunner: {fileID: 0}
-  humanoidController: {fileID: 0}
-  enableDebugLog: 1
---- !u!4 &2120638967
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2120638965}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &8571076842648159877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1085,4 +1031,3 @@ SceneRoots:
   - {fileID: 420786856}
   - {fileID: 1064799461}
   - {fileID: 1172799093}
-  - {fileID: 2120638967}
