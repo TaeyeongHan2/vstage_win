@@ -67,8 +67,8 @@ public class OptimizedMediaPipeAdapter : MonoBehaviour
         {
             var landmark = landmarks.landmarks[i];
             targetPositions[i] = new Vector3(
-                -landmark.x * 10f,
-                -landmark.y * 10f,
+                -landmark.x * 10f,   
+                landmark.y * 10f,   
                 landmark.z * 10f
             );
         }
