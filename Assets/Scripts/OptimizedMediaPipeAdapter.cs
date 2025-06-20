@@ -6,27 +6,30 @@ using Mediapipe.Tasks.Vision.PoseLandmarker;
 public class OptimizedMediaPipeAdapter : MonoBehaviour
 {
     [SerializeField] private PoseLandmarkerRunner poseLandmarkerRunner;
-    [SerializeField] private List<Avatar> avatars = new List<Avatar>();
     [SerializeField] private float smoothingFactor = 0.5f;
     
+    [Header("Debug Infos")]
+    [SerializeField] private List<Avatar> avatars = new List<Avatar>();
+    
     // Direct landmark transforms without visual representation
-    private Transform[] landmarks = new Transform[33];
+    private Transform[] bonePositions = new Transform[LandmarkCount];
     private Transform virtualNeck;
     private Transform virtualHip;
     
     // Smoothing buffers
-    private Vector3[] smoothedPositions = new Vector3[33];
-    private Vector3[] targetPositions = new Vector3[33];
+    private Vector3[] landmarkPositions = new Vector3[LandmarkCount];
     
+    private const int LandmarkCount = 33;
+
     private void Start()
     {
         // Create invisible landmark transforms
         var landmarkParent = new GameObject("LandmarkParent").transform;
-        for (int i = 0; i < 33; i++)
+        for (int i = 0; i < LandmarkCount; i++)
         {
             var landmark = new GameObject($"Landmark_{i}");
             landmark.transform.parent = landmarkParent;
-            landmarks[i] = landmark.transform;
+            bonePositions[i] = landmark.transform;
         }
         
         virtualNeck = new GameObject("VirtualNeck").transform;
@@ -49,7 +52,7 @@ public class OptimizedMediaPipeAdapter : MonoBehaviour
     
     public Transform GetLandmark(Landmark mark)
     {
-        return landmarks[(int)mark];
+        return bonePositions[(int)mark];
     }
     
     public Transform GetVirtualNeck() => virtualNeck;
@@ -63,10 +66,10 @@ public class OptimizedMediaPipeAdapter : MonoBehaviour
         var landmarks = result.poseLandmarks[0];
         
         // Update target positions
-        for (int i = 0; i < landmarks.landmarks.Count && i < 33; i++)
+        for (int i = 0; i < landmarks.landmarks.Count && i < LandmarkCount; i++)
         {
             var landmark = landmarks.landmarks[i];
-            targetPositions[i] = new Vector3(
+            landmarkPositions[i] = new Vector3(
                 -landmark.x * 10f,   
                 landmark.y * 10f,   
                 landmark.z * 10f
@@ -77,19 +80,17 @@ public class OptimizedMediaPipeAdapter : MonoBehaviour
     private void Update()
     {
         // Smooth landmark positions
-        for (int i = 0; i < 33; i++)
+        for (int i = 0; i < LandmarkCount; i++)
         {
-            smoothedPositions[i] = Vector3.Lerp(
-                smoothedPositions[i], 
-                targetPositions[i], 
+            bonePositions[i].localPosition = Vector3.Lerp(
+                bonePositions[i].localPosition, landmarkPositions[i],
                 smoothingFactor * Time.deltaTime * 60f
             );
-            landmarks[i].localPosition = smoothedPositions[i];
         }
         
         // Update virtual joints
-        virtualNeck.position = (landmarks[11].position + landmarks[12].position) / 2f;
-        virtualHip.position = (landmarks[23].position + landmarks[24].position) / 2f;
+        virtualNeck.position = (bonePositions[11].position + bonePositions[12].position) / 2f;
+        virtualHip.position = (bonePositions[23].position + bonePositions[24].position) / 2f;
     }
     
     public void SetVisible(bool visible)
