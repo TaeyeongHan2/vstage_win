@@ -701,6 +701,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1431505622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1431505624}
+  - component: {fileID: 1431505623}
+  m_Layer: 0
+  m_Name: MediaPipeDebugger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1431505623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431505622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f47b78319a2d5c42b3fd043628e3cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mediaPipeAdapter: {fileID: 1781295970}
+  avatars: []
+  isCalibrated: 0
+  hasVirtualJoints: 0
+  virtualNeckPosition: {x: 0, y: 0, z: 0}
+  virtualHipPosition: {x: 0, y: 0, z: 0}
+  humanoidNeck: {fileID: 0}
+  humanoidHips: {fileID: 0}
+--- !u!4 &1431505624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431505622}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1536469449
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,8 +837,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poseLandmarkerRunner: {fileID: 1064799468}
+  smoothingFactor: 0.3
   avatars: []
-  smoothingFactor: 0.5
 --- !u!4 &1781295971
 Transform:
   m_ObjectHideFlags: 0
@@ -1333,3 +1385,4 @@ SceneRoots:
   - {fileID: 1781295971}
   - {fileID: 1781749414}
   - {fileID: 1536469451}
+  - {fileID: 1431505624}

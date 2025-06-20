@@ -198,9 +198,8 @@ public class Avatar : MonoBehaviour
             Vector3 d = Vector3.Slerp(hipsTwist.initialDir, hipsTwist.CurrentDirection, .25f);
             d.y *= 0.5f;
             Quaternion deltaRotTracked = Quaternion.FromToRotation(hipsTwist.initialDir, d);
-            targetRot= deltaRotTracked * initialRotation;
+            targetRot = deltaRotTracked * initialRotation;
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRot, Time.deltaTime * speed);
-
         }
 
     }
