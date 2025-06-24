@@ -1,15 +1,5 @@
 fileFormatVersion: 2
 guid: bfac4fa329d1f4f23814af71a247c14b
-timeCreated: 1461012361
-licenseType: Store
-MonoImporter:
-  serializedVersion: 2
-  defaultReferences: []
-  executionOrder: 9998
-  icon: {instanceID: 0}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
 AssetOrigin:
   serializedVersion: 1
   productId: 14290
@@ -17,3 +7,12 @@ AssetOrigin:
   packageVersion: 2.4
   assetPath: Assets/Plugins/RootMotion/FinalIK/IK Components/VRIK.cs
   uploadId: 725641
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

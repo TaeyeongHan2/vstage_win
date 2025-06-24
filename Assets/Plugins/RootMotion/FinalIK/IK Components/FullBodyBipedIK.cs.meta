@@ -4,16 +4,6 @@ labels:
 - InverseKinematics
 - IK
 - FullBodyIK
-timeCreated: 1519038538
-licenseType: Store
-MonoImporter:
-  serializedVersion: 2
-  defaultReferences: []
-  executionOrder: 9999
-  icon: {fileID: 2800000, guid: 89e0c79ada10847639ab1754e12413a7, type: 3}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
 AssetOrigin:
   serializedVersion: 1
   productId: 14290
@@ -21,3 +11,12 @@ AssetOrigin:
   packageVersion: 2.4
   assetPath: Assets/Plugins/RootMotion/FinalIK/IK Components/FullBodyBipedIK.cs
   uploadId: 725641
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: 89e0c79ada10847639ab1754e12413a7, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
