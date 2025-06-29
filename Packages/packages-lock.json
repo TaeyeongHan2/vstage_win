@@ -9,15 +9,6 @@
       },
       "hash": "38fecf55e4fd94ccfe58a92ed8ad1a529ba1694e"
     },
-    "com.github.homuler.mediapipe": {
-      "version": "file:com.github.homuler.mediapipe",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {
-        "com.unity.ugui": "1.0.0",
-        "com.unity.test-framework": "1.0.0"
-      }
-    },
     "com.htc.upm.vive.openxr": {
       "version": "file:/Users/lee/Downloads/com.htc.upm.vive.openxr-2.5.1.tgz",
       "depth": 0,
