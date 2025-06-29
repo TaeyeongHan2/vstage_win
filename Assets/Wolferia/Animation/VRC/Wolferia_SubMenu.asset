@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: Wolferia_SubMenu
+  m_EditorClassIdentifier: 
+  controls:
+  - name: "\u30B9\u30AB\u30FC\u30C8\u7121\u3057"
+    icon: {fileID: 2800000, guid: 694344252a9aac443976e2839f94911e, type: 3}
+    type: 102
+    parameter:
+      name: SkirtControl
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u30AB\u30D0\u30F3\u7121\u3057"
+    icon: {fileID: 2800000, guid: eb0444006eefc9144986c7b9d38fa1db, type: 3}
+    type: 102
+    parameter:
+      name: BagControl
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u8896\u7121\u3057"
+    icon: {fileID: 2800000, guid: 5cd6a84d7ac3cf34081a8862c7f835eb, type: 3}
+    type: 102
+    parameter:
+      name: SleeveControl
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u9774\u7121\u3057"
+    icon: {fileID: 2800000, guid: 2062d26b98c63084d92ec8fa9802abb5, type: 3}
+    type: 102
+    parameter:
+      name: PumpsControl
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u30D6\u30E9\u30A6\u30B9\u7121\u3057"
+    icon: {fileID: 2800000, guid: 3c692584fb546c644a40cc9d6fa304ac, type: 3}
+    type: 102
+    parameter:
+      name: BlouseControl
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: "\u9774\u4E0B\u7121\u3057"
+    icon: {fileID: 2800000, guid: feeebabcd40b38d4abb89a12a550ac87, type: 3}
+    type: 102
+    parameter:
+      name: SocksControl
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
