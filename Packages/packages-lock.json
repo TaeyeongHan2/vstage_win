@@ -10,7 +10,7 @@
       "hash": "38fecf55e4fd94ccfe58a92ed8ad1a529ba1694e"
     },
     "com.htc.upm.vive.openxr": {
-      "version": "file:/Users/lee/Downloads/com.htc.upm.vive.openxr-2.5.1.tgz",
+      "version": "file:C:/Users/User/Downloads/com.htc.upm.vive.openxr-2.5.1.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {
